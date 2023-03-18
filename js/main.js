@@ -32,168 +32,70 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// When we put the mouse over a social media icon, the icon color changes
+/* 
+Function to add a class in an element when a different element is mouseover, and to remove
+the class when is mouseout 
+*/
+function mouseOverAndOut(elementListener, elementModify, className){
+    elementListener.addEventListener('mouseover', function(){
+        elementModify.classList.add(className);
+    });
 
+    elementListener.addEventListener('mouseout', function(){
+        elementModify.classList.remove(className);
+    });
+}
+
+
+// When we put the mouse over a social media icon, the icon color changes
 const githubIcon = document.getElementById('github-icon');
 const githubBack = document.getElementById('github');
-
-githubBack.addEventListener('mouseover', function() {
-    githubIcon.classList.add('main-color');
-})
-
-githubBack.addEventListener('mouseout', function() {
-    githubIcon.classList.remove('main-color');
-})
+mouseOverAndOut(githubBack, githubIcon, 'main-color');
 
 const linkedinIcon = document.getElementById('linkedin-icon');
 const linkedinBack = document.getElementById('linkedin');
-
-linkedinBack.addEventListener('mouseover', function() {
-    linkedinIcon.classList.add('main-color');
-})
-
-linkedinBack.addEventListener('mouseout', function() {
-    linkedinIcon.classList.remove('main-color');
-})
+mouseOverAndOut(linkedinBack, linkedinIcon, 'main-color');
 
 const youtubeIcon = document.getElementById('youtube-icon');
 const youtubeBack = document.getElementById('youtube');
-
-youtubeBack.addEventListener('mouseover', function() {
-    youtubeIcon.classList.add('main-color');
-})
-
-youtubeBack.addEventListener('mouseout', function() {
-    youtubeIcon.classList.remove('main-color');
-})
+mouseOverAndOut(youtubeBack, youtubeIcon, 'main-color');
 
 const tiktokIcon = document.getElementById('tiktok-icon');
 const tiktokBack = document.getElementById('tiktok');
+mouseOverAndOut(tiktokBack, tiktokIcon, 'main-color');
 
-tiktokBack.addEventListener('mouseover', function() {
-    tiktokIcon.classList.add('main-color');
-})
-
-tiktokBack.addEventListener('mouseout', function() {
-    tiktokIcon.classList.remove('main-color');
-})
 
 // When we put the mouse over the hero image, the frame changes
 const imageAbout = document.getElementById('image-about');
 const imageHeroContainer = document.getElementById('image-about-container');
-
-imageAbout.addEventListener('mouseover', function() {
-    imageHeroContainer.classList.add('image-about-container-hover');
-});
-
-imageAbout.addEventListener('mouseout', function() {
-    imageHeroContainer.classList.remove('image-about-container-hover');
-});
-
-
-const muchticketTab = document.getElementById('muchticket-tab');
-muchticketTab.addEventListener('mouseup', function (){
-    muchticketTab.classList.add('porfolio-tab-click');
-})
+mouseOverAndOut(imageAbout, imageHeroContainer, 'image-about-container-hover');
 
 
 // When we put the mouse over the portfolio-box, the details go up
-/*const cmAccesoriosDetail = document.getElementById('cmaccesorios-detail');
+const cmAccesoriosDetail = document.getElementById('cmaccesorios-detail');
 const cmAccesoriosBox = document.getElementById('cmaccesorios-image');
-
-cmAccesoriosBox.addEventListener('mouseover', function() {
-    cmAccesoriosDetail.classList.add('portfolio-details-hover');
-});
-
-cmAccesoriosBox.addEventListener('mouseout', function() {
-    cmAccesoriosDetail.classList.remove('portfolio-details-hover');
-}); 
-
-cmAccesoriosDetail.addEventListener('mouseover', function() {
-    cmAccesoriosDetail.classList.add('portfolio-details-hover');
-});
-
-cmAccesoriosDetail.addEventListener('mouseout', function() {
-    cmAccesoriosDetail.classList.remove('portfolio-details-hover');
-}); */
+mouseOverAndOut(cmAccesoriosBox, cmAccesoriosDetail, 'portfolio-details-hover');
+mouseOverAndOut(cmAccesoriosDetail, cmAccesoriosDetail, 'portfolio-details-hover');
 
 const leagueDetail = document.getElementById('league-detail');
 const leagueBox = document.getElementById('league-image');
-
-leagueBox.addEventListener('mouseover', function() {
-    leagueDetail.classList.add('portfolio-details-hover');
-});
-
-leagueBox.addEventListener('mouseout', function() {
-    leagueDetail.classList.remove('portfolio-details-hover');
-}); 
-
-leagueDetail.addEventListener('mouseover', function() {
-    leagueDetail.classList.add('portfolio-details-hover');
-});
-
-leagueDetail.addEventListener('mouseout', function() {
-    leagueDetail.classList.remove('portfolio-details-hover');
-}); 
+mouseOverAndOut(leagueBox, leagueDetail, 'portfolio-details-hover');
+mouseOverAndOut(leagueDetail, leagueDetail, 'portfolio-details-hover');
 
 const cocinaSaludDetail = document.getElementById('cocinasalud-detail');
 const cocinaSaludBox = document.getElementById('cocinasalud-image');
+mouseOverAndOut(cocinaSaludBox, cocinaSaludDetail, 'portfolio-details-hover');
+mouseOverAndOut(cocinaSaludDetail, cocinaSaludDetail, 'portfolio-details-hover');
 
-cocinaSaludBox.addEventListener('mouseover', function() {
-    cocinaSaludDetail.classList.add('portfolio-details-hover');
-});
-
-cocinaSaludBox.addEventListener('mouseout', function() {
-    cocinaSaludDetail.classList.remove('portfolio-details-hover');
-}); 
-
-cocinaSaludDetail.addEventListener('mouseover', function() {
-    cocinaSaludDetail.classList.add('portfolio-details-hover');
-});
-
-cocinaSaludDetail.addEventListener('mouseout', function() {
-    cocinaSaludDetail.classList.remove('portfolio-details-hover');
-}); 
-
-/*const votarFmsDetail = document.getElementById('fms-detail');
+const votarFmsDetail = document.getElementById('fms-detail');
 const votarFmsBox = document.getElementById('fms-image');
-
-votarFmsBox.addEventListener('mouseover', function() {
-    votarFmsDetail.classList.add('portfolio-details-hover');
-});
-
-votarFmsBox.addEventListener('mouseout', function() {
-    votarFmsDetail.classList.remove('portfolio-details-hover');
-}); 
-
-votarFmsDetail.addEventListener('mouseover', function() {
-    votarFmsDetail.classList.add('portfolio-details-hover');
-});
-
-votarFmsDetail.addEventListener('mouseout', function() {
-    votarFmsDetail.classList.remove('portfolio-details-hover');
-}); */
-
+mouseOverAndOut(votarFmsBox, votarFmsDetail, 'portfolio-details-hover');
+mouseOverAndOut(votarFmsDetail, votarFmsDetail, 'portfolio-details-hover');
 
 const beSpokeDetail = document.getElementById('bespoke-detail');
 const beSpokeBox = document.getElementById('bespoke-image');
-
-beSpokeBox.addEventListener('mouseover', function() {
-    beSpokeDetail.classList.add('portfolio-details-hover');
-});
-
-beSpokeBox.addEventListener('mouseout', function() {
-    beSpokeDetail.classList.remove('portfolio-details-hover');
-}); 
-
-beSpokeDetail.addEventListener('mouseover', function() {
-    beSpokeDetail.classList.add('portfolio-details-hover');
-});
-
-beSpokeDetail.addEventListener('mouseout', function() {
-    beSpokeDetail.classList.remove('portfolio-details-hover');
-}); 
-
+mouseOverAndOut(beSpokeBox, beSpokeDetail, 'portfolio-details-hover');
+mouseOverAndOut(beSpokeDetail, beSpokeDetail, 'portfolio-details-hover');
 
 
 /* Button to go top */
