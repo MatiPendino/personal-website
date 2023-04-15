@@ -26,23 +26,21 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-<body>
-    
-    <header class="fixed w-100 z-3 top-0">
 
-      <nav class="navbar navbar-expand-lg navbar-dark navbar-back-color px-4">
+<body>
+    <header class="w-100 z-3 top-0">
+      <nav class="navbar navbar-expand-lg navbar-dark px-4">
         <a class="navbar-brand" href="#" style="color: white;">Matías Pendino</a>
+
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#responsiveMenu" aria-controls="responsiveMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="color: white!important;"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="responsiveMenu">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active px-2">
-              <a class="nav-link active" href="#home">Inicio</a>
+              <a class="nav-link active" href="#hero">Inicio</a>
             </li>
             <li class="nav-item px-2">
               <a class="nav-link" href="#about">Sobre mí</a>
@@ -59,56 +57,43 @@
           </ul>
         </div>
       </nav>
-        
     </header>
 
-    <main class="main-back-color">
-      <section class="home padding-x-default" id="home">
-        <div class="row">
+    <main>
+      <section class="hero" id="hero">
+        <div class="row hero__container">
           <div class="col-12 col-lg-10">
-            <h3 class="margin-elements-hero-titles">Hola! Soy</h3>
-            <h1 class="margin-elements-hero-titles" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;">Matías Pendino</h1>
-            <h3 class="margin-elements-hero-titles">Y soy <span class="typed secondary-color"></span></h3>
+            <h3>Hola! Soy</h3>
+            <h1 style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;">Matías Pendino</h1>
+            <h3>Y soy <span class="typed secondary-color"></span></h3>
   
-            <div class="social-media margin-elements-hero">
+            <div class="hero__social-media">
               <a href="https://www.linkedin.com/in/matias-pendino/" class="mx-2 secondary-color" target="_blank" id="linkedin"><i class="bi bi-linkedin" id="linkedin-icon"></i></a>
               <a href="https://github.com/MatiPendino" class="mx-2 secondary-color" target="_blank" id="github"><i class="bi bi-github" id="github-icon"></i></a>
               <a href="https://www.youtube.com/@matipendino879/featured" class="mx-2 secondary-color" target="_blank" id="youtube"><i class="bi bi-youtube" id="youtube-icon"></i></a>
               <a href="https://www.tiktok.com/@matipendino6" class="mx-2 secondary-color" target="_blank" id="tiktok"><i class="bi bi-tiktok" id="tiktok-icon"></i></a>
             </div>
 
-            <div class="mx-2 margin-elements-hero">
-              <a href="media/files/Matias Pendino - CV.pdf" download class="secondary-color button button-cv" id="download-cv">Descargar CV</a>
+            <div class="mx-2 hero__cv">
+              <a href="media/files/Matias Pendino - CV.pdf" download class="secondary-color button" id="download-cv">Descargar CV</a>
             </div>
           </div>
-  
-          <!--<div class="col-12 col-lg-5 align-items-center">
-            <div class="image-hero-container" id="image-hero-container" style="margin: auto;">
-              <img src="media/img/hero_img.HEIC" id="image-hero" alt="Hero image">
-            </div>
-          </div>-->
         </div>
       </section>
   
-      <section class="about padding-x-about aos-animate" data-aos="zoom-in" data-aos-duration="500" id="about">
-        <div class="row">
+      <section class="about aos-animate" data-aos="zoom-in" data-aos-duration="500" id="about">
+        <div class="row about__container">
           <div class="col-12 col-lg-6">
-            <div class="image-about-container" id="image-about-container" style="margin: auto;">
+            <div class="about__container-image" id="image-about-container">
               <img src="media/img/hero_img.HEIC" id="image-about" alt="About image">
             </div>
           </div>
   
-          <div class="col-12 col-lg-6">
+          <div class="about__container-text col-12 col-lg-6">
             <h2 class="mb-3">Sobre mí</h2>
-            <p class="font-ubuntu">
-              Hola, mi nombre es Matías Pendino, tengo 21 años y soy de Rosario, Argentina.
-            </p>
-            <p class="font-ubuntu">
-              Siempre me llamó la atención el software, por lo que en 2019 empecé a estudiar de manera autodidacta. Luego en 2020, me decidí a realizar la Tecnicatura Superior en Desarrollo de Software, la cual finalicé en diciembre del 2022. Además, en febrero del 2023 realicé el examen de inglés IELTS General Training, en el cual obtuve una calificación general de 7 (CEFR C1).
-            </p>
-            <p class="font-ubuntu">
-              Actualmente me especializo en el desarrollo backend, utilizando principalmente Django, Django REST Framework y MySQL. También realizo proyectos móviles de manera freelance utilizando Flutter, y tiendas online usando Wordpress.
-            </p>
+            <p>Hola, mi nombre es Matías Pendino, tengo 21 años y soy de Rosario, Argentina.</p>
+            <p>Siempre me llamó la atención el software, por lo que en 2019 empecé a estudiar de manera autodidacta. Luego en 2020, me decidí a realizar la Tecnicatura Superior en Desarrollo de Software, la cual finalicé en diciembre del 2022. Además, en febrero del 2023 realicé el examen de inglés IELTS General Training, en el cual obtuve una calificación general de 7 (CEFR C1).</p>
+            <p>Actualmente me especializo en el desarrollo backend, utilizando principalmente Django, Django REST Framework y MySQL. También realizo proyectos móviles de manera freelance utilizando Flutter, y tiendas online usando WordPress.</p>
           </div>
         </div>
       </section>
@@ -116,142 +101,140 @@
       <section class="skills" id="skills">
         <h3 class="text-center">Habilidades</h3>
   
-        <div class="row col-12 col-lg-9" style="margin: 0 auto;">
-  
+        <div class="row col-12 col-lg-9 skills__container">
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="500">
             <div class="skill-card">
-              <img src="media/img/logo-django-png.png" style="width: 9rem; "alt="Django Icon">
-              <p class="font-karla">Django</p>
-              <p class="font-karla">Nivel: Muy bueno</p>
+              <img src="media/img/logo-django-png.png" alt="Django Icon">
+              <p>Django</p>
+              <p>Nivel: Muy bueno</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="700">
             <div class="skill-card">
-              <img src="media/img/logo-python-png.png" style="width: 9rem; "alt="Python Icon">
-              <p class="font-karla">Python</p>
-              <p class="font-karla">Nivel: Muy bueno</p>
+              <img src="media/img/logo-python-png.png" alt="Python Icon">
+              <p>Python</p>
+              <p>Nivel: Muy bueno</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="900">
             <div class="skill-card">
-              <img src="media/img/logo-git-png.png" style="width: 9rem; "alt="Git Icon">
-              <p class="font-karla">Git</p>
-              <p class="font-karla">Nivel: Bueno</p>
+              <img src="media/img/logo-git-png.png" alt="Git Icon">
+              <p>Git</p>
+              <p>Nivel: Bueno</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="1100">
             <div class="skill-card">
-              <img src="media/img/logo-github-png.png" style="width: 9rem; "alt="GitHub Icon">
-              <p class="font-karla">GitHub</p>
-              <p class="font-karla">Nivel: Bueno</p>
+              <img src="media/img/logo-github-png.png" alt="GitHub Icon">
+              <p>GitHub</p>
+              <p>Nivel: Bueno</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="500">
             <div class="skill-card">
-              <img src="media/img/logo-mysql-png.png" style="width: 9rem; "alt="MySQL Icon">
-              <p class="font-karla">MySQL</p>
-              <p class="font-karla">Nivel: Bueno</p>
+              <img src="media/img/logo-mysql-png.png" alt="MySQL Icon">
+              <p>MySQL</p>
+              <p>Nivel: Bueno</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="700">
             <div class="skill-card">
-              <img src="media/img/logo-html5-png.png" style="width: 9rem; "alt="HTML Icon">
-              <p class="font-karla">HTML 5</p>
-              <p class="font-karla">Nivel: Bueno</p>
+              <img src="media/img/logo-html5-png.png" alt="HTML Icon">
+              <p>HTML 5</p>
+              <p>Nivel: Bueno</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="900">
             <div class="skill-card">
-              <img src="media/img/logo-bootstrap-png.png" style="width: 9rem; "alt="Bootstrap Icon">
-              <p class="font-karla">Bootstrap</p>
-              <p class="font-karla">Nivel: Bueno</p>
+              <img src="media/img/logo-bootstrap-png.png" alt="Bootstrap Icon">
+              <p>Bootstrap</p>
+              <p>Nivel: Bueno</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="1100">
             <div class="skill-card">
-              <img src="media/img/logo-flutter-png.png" style="width: 9rem; "alt="Flutter Icon">
-              <p class="font-karla">Flutter/Dart</p>
-              <p class="font-karla">Nivel: Bueno</p>
+              <img src="media/img/logo-flutter-png.png" alt="Flutter Icon">
+              <p>Flutter/Dart</p>
+              <p>Nivel: Bueno</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="500">
             <div class="skill-card">
-              <img src="media/img/logo-css-png.png" style="width: 9rem; "alt="CSS Icon">
-              <p class="font-karla">CSS</p>
-              <p class="font-karla">Nivel: Medio</p>
+              <img src="media/img/logo-css-png.png" alt="CSS Icon">
+              <p>CSS</p>
+              <p>Nivel: Medio</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="700">
             <div class="skill-card">
-              <img src="media/img/logo-drf-png.png" style="width: 9rem; "alt="Django REST Framework Icon">
-              <p class="font-karla">Django REST</p>
-              <p class="font-karla">Nivel: Medio</p>
+              <img src="media/img/logo-drf-png.png" alt="Django REST Framework Icon">
+              <p>Django REST</p>
+              <p>Nivel: Medio</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="900">
             <div class="skill-card">
-              <img src="media/img/logo-js-png.png" style="width: 9rem; "alt="JavaScript Icon">
-              <p class="font-karla">JavaScript</p>
-              <p class="font-karla">Nivel: Medio</p>
+              <img src="media/img/logo-js-png.png" alt="JavaScript Icon">
+              <p>JavaScript</p>
+              <p>Nivel: Medio</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="1100">
             <div class="skill-card">
-              <img src="media/img/logo-jquery-png.png" style="width: 9rem; "alt="JQuery Icon">
-              <p class="font-karla">JQuery</p>
-              <p class="font-karla">Nivel: Medio</p>
+              <img src="media/img/logo-jquery-png.png" alt="JQuery Icon">
+              <p>JQuery</p>
+              <p>Nivel: Medio</p>
             </div>
           </div>
 
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="500">
             <div class="skill-card">
-              <img src="media/img/logo-php-png.png" style="width: 9rem; "alt="PHP Icon">
-              <p class="font-karla">PHP</p>
-              <p class="font-karla">Nivel: Medio</p>
+              <img src="media/img/logo-php-png.png" alt="PHP Icon">
+              <p>PHP</p>
+              <p>Nivel: Medio</p>
             </div>
           </div>
   
           <div class="col-6 col-lg-3 aos-init aos-animate text-center" data-aos="fade-up" data-aos-duration="700">
             <div class="skill-card">
-              <img src="media/img/logo-wordpress-png.png" style="width: 9rem; "alt="Wordpress Icon">
-              <p class="font-karla">Wordpress</p>
-              <p class="font-karla">Nivel: Medio</p>
+              <img src="media/img/logo-wordpress-png.png" alt="WordPress Icon">
+              <p>WordPress</p>
+              <p>Nivel: Medio</p>
             </div>
           </div>
-  
         </div>
       </section>
   
-      <section class="experience padding-x-default" id="experience">
+      <section class="experience" id="experience">
         <h3 class="text-center mb-4">Experiencia</h3>
   
-        <div class="experience-flex-responsive justify-content-center">
+        <div class="experience__container justify-content-center">
   
           <div class="col-12 col-lg-4 aos-animate" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
             <div class="experience-flex-responsive-invert">
               <ul class="nav nav-pills" id="myTab" role="tablist">
                 <li class="col-6 col-lg-12 nav-item mb-4">
-                  <a class="nav-link portfolio-tab active" id="muchticket-tab" data-toggle="tab" href="#muchticket" role="tab" aria-controls="muchticket" aria-selected="true">MuchTicket</a>
+                  <a class="nav-link experience-tab active" id="muchticket-tab" data-toggle="tab" href="#muchticket" role="tab" aria-controls="muchticket" aria-selected="true">MuchTicket</a>
                 </li>
                 <li class="col-6 col-lg-12 nav-item mb-4">
-                  <a class="nav-link portfolio-tab" id="flutter-tab" data-toggle="tab" href="#flutter" role="tab" aria-controls="flutter" aria-selected="false">Flutter Freelance</a>
+                  <a class="nav-link experience-tab" id="flutter-tab" data-toggle="tab" href="#flutter" role="tab" aria-controls="flutter" aria-selected="false">Flutter Freelance</a>
                 </li>
                 <li class="col-6 col-lg-12 nav-item mb-4">
-                  <a class="nav-link portfolio-tab" id="wordpress-tab" data-toggle="tab" href="#wordpress" role="tab" aria-controls="wordpress" aria-selected="false">Wordpress Freelance</a>
+                  <a class="nav-link experience-tab" id="wordpress-tab" data-toggle="tab" href="#wordpress" role="tab" aria-controls="wordpress" aria-selected="false">WordPress Freelance</a>
                 </li>
                 <li class="col-6 col-lg-12 nav-item mb-4">
-                  <a class="nav-link portfolio-tab" id="litoral-tab" data-toggle="tab" href="#litoral" role="tab" aria-controls="litoral" aria-selected="false">Litoral Celulares</a>
+                  <a class="nav-link experience-tab" id="litoral-tab" data-toggle="tab" href="#litoral" role="tab" aria-controls="litoral" aria-selected="false">Litoral Celulares</a>
                 </li>
               </ul>
             </div>
@@ -281,7 +264,7 @@
               </div>
       
               <div class="tab-pane fade show experience-card" id="wordpress" role="tabpanel" aria-labelledby="wordpress-tab">
-                <h4>Diseñador y Desarrollador Wordpress Freelance</h4>
+                <h4>Diseñador y Desarrollador WordPress Freelance</h4>
                 <p>Agosto 2020 - Actualidad</p>
                 <ul>
                   <li class="mt-3">Diseños y desarrollos de tiendas online, y sitios web personales y empresariales.</li>
@@ -311,7 +294,7 @@
       <section class="portfolio pb-4" id="portfolio">
         <h3 class="text-center">Algunos proyectos</h3>
   
-        <div class="row col-10 col-lg-10" style="margin: 0 auto;">
+        <div class="portfolio__container row col-10 col-lg-10">
   
           <div class="col-12 col-lg-4 aos-animate" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="500">
             <div class="w-100 portfolio-box" id="cocinasalud-box">
@@ -320,9 +303,9 @@
                 <h4 class="text-center">CocinaSalud</h4>
                 <p class="text-center">HTML, CSS, Bootstrap, Django, JavaScript, MySQL</p>
                 <div class="row text-center">
-                  <!--<div class="col-6 col-4">
-                    <a href="" class="button-portfolio button" target="_blank">Demo</a>
-                  </div> -->
+                  <div class="col-6 col-4">
+                    <a href="https://cocinasalud.net" class="button-portfolio button" target="_blank">Demo</a>
+                  </div>
                   <div class="col-6 col-4">
                     <a href="https://github.com/MatiPendino/cocina-salud" class="button-portfolio button" target="_blank">Repo</a>
                   </div>
@@ -354,7 +337,7 @@
               <img class="w-100" id="bespoke-image" src="media/img/bespoke.png" alt="BeSpoke Project">
               <div class="portfolio-details" id="bespoke-detail">
                 <h4 class="text-center">BeSpoke</h4>
-                <p class="text-center">Wordpress</p>
+                <p class="text-center">WordPress</p>
                 <div class="row text-center">
                   <div class="col-6 col-4">
                     <a href="https://arquitecturabespoke.ar" class="button-portfolio button" target="_blank">Demo</a>
@@ -375,10 +358,10 @@
                 <p class="text-center">Java, Android Studio, Firebase</p>
                 <div class="row text-center">
                   <div class="col-6 col-4">
-                    <a href="" class="button-portfolio button" target="_blank">Demo</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.eddd.votarfms&hl=es_419" class="button-portfolio button" target="_blank">Demo</a>
                   </div>
                   <div class="col-6 col-4">
-                    <a href="" class="button-portfolio button" target="_blank">Repo</a>
+                    <a href="https://github.com/MatiPendino/VotarFMS" class="button-portfolio button" target="_blank">Repo</a>
                   </div>
                 </div>
               </div>
@@ -390,14 +373,14 @@
               <img class="w-100" id="cmaccesorios-image" src="media/img/cm-accesorios.png" alt="CMAccesorios Project">
               <div class="portfolio-details" id="cmaccesorios-detail">
                 <h4 class="text-center">CMAccesorios</h4>
-                <p class="text-center">Wordpress</p>
+                <p class="text-center">WordPress</p>
                 <div class="row text-center">
                   <div class="col-6 col-4">
-                    <a href="" class="button-portfolio button" target="_blank">Demo</a>
+                    <a href="https://cmaccesorios.com/" class="button-portfolio button" target="_blank">Demo</a>
                   </div>
-                  <div class="col-6 col-4">
+                  <!-- <div class="col-6 col-4">
                     <a href="" class="button-portfolio button" target="_blank">Repo</a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -408,9 +391,9 @@
       </section>
     </main>
 
-    <footer class="main-back-color">
-      <div class="container-footer row w-100 justify-content-between">
-        <div class="col-8 col-lg-5" style="margin: auto 0;">
+    <footer>
+      <div class="footer__container row w-100 justify-content-between">
+        <div class="col-8 col-lg-5 footer__copyright">
           <span>Creado por Matías Pendino &copy; <span id="current-year"></span></span>
         </div>
         <div class="col-4 col-lg-2">
@@ -430,6 +413,10 @@
     <script>
       ScrollReveal().reveal('.portfolio');
     </script> -->
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Typed.js -->  
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- AOS Animations -->

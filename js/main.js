@@ -1,7 +1,7 @@
 
 // Typed.js settings
 const typed = new Typed('.typed', {
-    strings: ['Back-end developer', 'Mobile developer', 'Django developer', 'Python developer'],
+    strings: ['Back-end developer', 'Mobile developer', 'Django developer', 'Python developer', 'WordPress developer'],
     typeSpeed: 80,
     backSpeed: 30,
     backDelay: 500,
@@ -68,7 +68,7 @@ mouseOverAndOut(tiktokBack, tiktokIcon, 'main-color');
 // When we put the mouse over the hero image, the frame changes
 const imageAbout = document.getElementById('image-about');
 const imageHeroContainer = document.getElementById('image-about-container');
-mouseOverAndOut(imageAbout, imageHeroContainer, 'image-about-container-hover');
+mouseOverAndOut(imageAbout, imageHeroContainer, 'about__container-image-hover');
 
 
 // When we put the mouse over the portfolio-box, the details go up
@@ -106,3 +106,21 @@ document.getElementById('top-button').addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+
+/* Change language */
+/*const changeLanguage = async language => {
+    const requestJson = await fetch(`./languages/${language}.json`);
+    const texts = await requestJson.json();
+
+    for(const textToChange of textsToChange) {
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+
+        textToChange.innerHTML = texts[section][value];
+    }
+}
+
+flagsElement.addEventListener('click', (e) => {
+    changeLanguage(e.target.parentElement.dataset.language);
+})*/
