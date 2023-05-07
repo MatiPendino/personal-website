@@ -156,6 +156,7 @@ header nav {
 
 .hero__social-media a:hover {
     background-color: var(--dark-secondary);
+    color: var(--dark-main);
 }
 
 .hero__cv a {
@@ -224,7 +225,7 @@ header nav {
     transition: all .3s ease-in-out;
 }
 
-.about__container-image-hover::after {
+.about__container-image:hover::after {
     top: 10px;
     left: 10px;
 }
@@ -365,11 +366,11 @@ header nav {
 }
 
 .portfolio-details {
-    z-index: -1;
-    display: none;
+    z-index: 1;
+    display: block;
     position: absolute;
     opacity: 0;
-    top: 100%;
+    top: 0%;
     height: calc(100% - 20px);
     width: 100%;
     border-radius: 15px;
@@ -396,11 +397,8 @@ header nav {
     margin-top: 10%;
 }
 
-.portfolio-details-hover {
-    display: block!important;
+.portfolio-details:hover {
     opacity: 1;
-    z-index: 2;
-    top: 0px;
 }
 
 .button-portfolio {

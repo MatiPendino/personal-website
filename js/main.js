@@ -32,71 +32,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-/* 
-Function to add a class in an element when a different element is mouseover, and to remove
-the class when is mouseout 
-*/
-function mouseOverAndOut(elementListener, elementModify, className){
-    elementListener.addEventListener('mouseover', function(){
-        elementModify.classList.add(className);
-    });
-
-    elementListener.addEventListener('mouseout', function(){
-        elementModify.classList.remove(className);
-    });
-}
-
-
-// When we put the mouse over a social media icon, the icon color changes
-const githubIcon = document.getElementById('github-icon');
-const githubBack = document.getElementById('github');
-mouseOverAndOut(githubBack, githubIcon, 'main-color');
-
-const linkedinIcon = document.getElementById('linkedin-icon');
-const linkedinBack = document.getElementById('linkedin');
-mouseOverAndOut(linkedinBack, linkedinIcon, 'main-color');
-
-const youtubeIcon = document.getElementById('youtube-icon');
-const youtubeBack = document.getElementById('youtube');
-mouseOverAndOut(youtubeBack, youtubeIcon, 'main-color');
-
-const tiktokIcon = document.getElementById('tiktok-icon');
-const tiktokBack = document.getElementById('tiktok');
-mouseOverAndOut(tiktokBack, tiktokIcon, 'main-color');
-
-
-// When we put the mouse over the hero image, the frame changes
-const imageAbout = document.getElementById('image-about');
-const imageHeroContainer = document.getElementById('image-about-container');
-mouseOverAndOut(imageAbout, imageHeroContainer, 'about__container-image-hover');
-
-
-// When we put the mouse over the portfolio-box, the details go up
-const cmAccesoriosDetail = document.getElementById('cmaccesorios-detail');
-const cmAccesoriosBox = document.getElementById('cmaccesorios-image');
-mouseOverAndOut(cmAccesoriosBox, cmAccesoriosDetail, 'portfolio-details-hover');
-mouseOverAndOut(cmAccesoriosDetail, cmAccesoriosDetail, 'portfolio-details-hover');
-
-const leagueDetail = document.getElementById('league-detail');
-const leagueBox = document.getElementById('league-image');
-mouseOverAndOut(leagueBox, leagueDetail, 'portfolio-details-hover');
-mouseOverAndOut(leagueDetail, leagueDetail, 'portfolio-details-hover');
-
-const cocinaSaludDetail = document.getElementById('cocinasalud-detail');
-const cocinaSaludBox = document.getElementById('cocinasalud-image');
-mouseOverAndOut(cocinaSaludBox, cocinaSaludDetail, 'portfolio-details-hover');
-mouseOverAndOut(cocinaSaludDetail, cocinaSaludDetail, 'portfolio-details-hover');
-
-const votarFmsDetail = document.getElementById('fms-detail');
-const votarFmsBox = document.getElementById('fms-image');
-mouseOverAndOut(votarFmsBox, votarFmsDetail, 'portfolio-details-hover');
-mouseOverAndOut(votarFmsDetail, votarFmsDetail, 'portfolio-details-hover');
-
-const beSpokeDetail = document.getElementById('bespoke-detail');
-const beSpokeBox = document.getElementById('bespoke-image');
-mouseOverAndOut(beSpokeBox, beSpokeDetail, 'portfolio-details-hover');
-mouseOverAndOut(beSpokeDetail, beSpokeDetail, 'portfolio-details-hover');
-
 
 /* Button to go top */
 
@@ -106,21 +41,3 @@ document.getElementById('top-button').addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
-
-/* Change language */
-/*const changeLanguage = async language => {
-    const requestJson = await fetch(`./languages/${language}.json`);
-    const texts = await requestJson.json();
-
-    for(const textToChange of textsToChange) {
-        const section = textToChange.dataset.section;
-        const value = textToChange.dataset.value;
-
-        textToChange.innerHTML = texts[section][value];
-    }
-}
-
-flagsElement.addEventListener('click', (e) => {
-    changeLanguage(e.target.parentElement.dataset.language);
-})*/
